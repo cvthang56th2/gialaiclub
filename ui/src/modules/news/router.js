@@ -8,18 +8,20 @@ export default {
   children: [
     {
       name: 'news_list',
-      path: '/news',
+      path: '/admin/news',
       component: lazyLoading('news/components/list'),
       meta: {
-        title: 'news list'
-      }
+        title: 'news list',
+        layout: 'admin'
+      },
     }, {
       name: 'edit_news',
-      path: '/news/:id',
+      path: '/admin/news/:id',
       component: lazyLoading('news/components/detail'),
       meta: {
-        title: 'Edit news'
-      }
+        title: 'Edit news',
+        layout: 'admin'
+      },
     }
   ]
 }

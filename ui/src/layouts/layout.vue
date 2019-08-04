@@ -3,7 +3,8 @@
     <div v-if="isLoading" class="wrap-loading d-flex justify-content-center align-items-center">
       <div class="custom-page-loading spinner-border"></div>
     </div>
-    <router-view/>
+    <LayoutClient v-if="layout === 'client'" />
+    <LayoutAdmin v-else />
   </div>
 </template>
 
