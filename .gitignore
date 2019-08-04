@@ -1,6 +1,7 @@
 #Ignore Mac files in web
 /web/.DS_Store
 /web/node_modules/
+/ui/node_modules/
 
 # Editor directories and files
 web/.idea
