@@ -15,7 +15,7 @@ export default new Router({
     {
       name: 'home',
       path: '/',
-      component: lazyLoading('core/components/dashboard'),
+      component: lazyLoading('views/Home'),
       meta: {
         title: 'Home',
         activeMenu: 'dashboard'
@@ -24,7 +24,7 @@ export default new Router({
     {
       name: 'not_found',
       path: '/404',
-      component: lazyLoading('core/components/not-found'),
+      component: lazyLoading('modules/core/components/not-found'),
       meta: {
         auth: false,
         title: 'Not Found'
@@ -33,7 +33,7 @@ export default new Router({
     {
       name: 'access_denied',
       path: '/403',
-      component: lazyLoading('core/components/access-denied'),
+      component: lazyLoading('modules/core/components/access-denied'),
       meta: {
         auth: false,
         title: 'Denied Permission'
@@ -49,7 +49,7 @@ export default new Router({
   ]
 })
 
-function generateRoutesFromMenu(menu = [], routes = []) {
+function generateRoutesFromMenu (menu = [], routes = []) {
   for (let i = 0, l = menu.length; i < l; i++) {
     let item = menu[i]
     if (item.path) {

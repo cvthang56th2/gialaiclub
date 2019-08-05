@@ -4,9 +4,9 @@ export default name => () => {
   return require.ensure([], require => {
     let component
     try {
-      component = require(`@/modules/${name}.vue`)
+      component = require(`@/${name}.vue`)
     } catch (error) {
-      component = require(`@/modules/${name}/index.vue`)
+      component = require(`@/${name}/index.vue`)
     }
     return component
   })

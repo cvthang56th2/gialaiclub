@@ -9,19 +9,19 @@ export default {
     {
       name: 'news_list',
       path: '/admin/news',
-      component: lazyLoading('news/components/list'),
+      component: lazyLoading('modules/news/components/list'),
       meta: {
         title: 'news list',
         layout: 'admin'
-      },
+      }
     }, {
       name: 'edit_news',
       path: '/admin/news/:id',
-      component: lazyLoading('news/components/detail'),
+      component: lazyLoading('modules/news/components/detail'),
       meta: {
         title: 'Edit news',
         layout: 'admin'
-      },
+      }
     }
   ]
 }

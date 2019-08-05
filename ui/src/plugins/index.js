@@ -20,10 +20,16 @@ import 'quill/dist/quill.bubble.css'
 
 import 'izitoast/dist/css/iziToast.min.css'
 
+// Regis vuetify
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
+import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
+
 function toast ({ title, message, type, timeout, cb }) {
   if (type === VueNotifications.types.warn) type = 'warning'
   timeout = 5000
-  return iziToast[type]({title, message, timeout})
+  return iziToast[type]({ title, message, timeout })
 }
 
 // Vue.component('datetime', Datetime)
@@ -41,3 +47,6 @@ Vue.use(VueCookie)
 // Vue.use(FullCalendar)
 Vue.use(VueQuillEditor)
 Vue.use(VueLocalStorage)
+Vue.use(Vuetify, {
+  iconfont: 'md'
+})
