@@ -6,6 +6,8 @@ import middleware from '@/utils/middleware'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery/src/jquery.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
+import vuetify from './plugins/vuetify';
+import '@babel/polyfill'
 
 window.apiUrl = '/api/v1'
 
@@ -17,5 +19,6 @@ middleware(router)
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

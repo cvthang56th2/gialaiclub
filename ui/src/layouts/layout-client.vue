@@ -20,17 +20,6 @@
         </ol>
       </nav>
     </div>
-    <v-list-group no-action sub-group value="true">
-      <template v-slot:activator>
-        <v-list-item-content>
-          <v-list-item-title>Admin</v-list-item-title>
-        </v-list-item-content>
-      </template>
-
-      <v-list-item v-for="(admin, i) in admins" :key="i" link>
-        {{admin}}
-      </v-list-item>
-    </v-list-group>
     <div class="wrap-content container-fluid">
       <div class="row">
         <LeftContent class="col-9" />
