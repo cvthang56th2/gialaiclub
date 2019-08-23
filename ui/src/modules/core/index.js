@@ -6,7 +6,6 @@ import getters from './store/getters'
 import mutations from './store/mutations'
 
 /* Modules */
-import news from '@/modules/news'
 
 Vue.use(Vuex)
 
@@ -22,6 +21,7 @@ const state = {
       title: 'Example title',
       message: 'Example message!'
     },
+    layout: 'client',
     development: process && process.env && process.env.NODE_ENV === 'development'
   }
 }
@@ -32,7 +32,6 @@ const store = new Vuex.Store({
   state,
   mutations,
   modules: {
-    news
   }
 })
 

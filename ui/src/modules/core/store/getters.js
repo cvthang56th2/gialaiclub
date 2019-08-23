@@ -5,6 +5,7 @@ const refresh = state => state.cores.refresh
 const progress = state => state.cores.progress
 const isLoading = state => state.cores.isLoading
 const development = state => state.cores.development
+const layout = state => state.cores.layout
 
 export default {
   cores,
@@ -13,6 +14,7 @@ export default {
   progress,
   isLoading,
   development,
+  layout,
   socials: () => [
     { text: 'Facebook', value: 'facebook' },
     { text: 'Instagram', value: 'instagram' },

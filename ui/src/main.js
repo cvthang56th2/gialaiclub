@@ -9,7 +9,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import vuetify from './plugins/vuetify';
 import '@babel/polyfill'
 
-window.apiUrl = '/api/v1'
+window.apiUrl = 'http://localhost:9002/api/v1'
 
 Vue.config.productionTip = false
 

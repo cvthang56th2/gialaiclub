@@ -19,6 +19,10 @@ const REFRESH = (state) => {
   state.cores.refresh = Date.now()
 }
 
+const SET_LAYOUT = (state, layout) => {
+  state.cores.layout = layout
+}
+
 const NOTIFY = (state, notify) => {
   let { type } = notify
 
@@ -39,5 +43,6 @@ export default {
   PROGRESS,
   REFRESH,
   NOTIFY,
+  SET_LAYOUT,
   GOTO
 }

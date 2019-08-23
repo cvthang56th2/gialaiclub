@@ -20,7 +20,8 @@ import Layout from '@/layouts/layout.vue'
     computed: {
       ...mapGetters({
         'notify': 'notify',
-        'refresh': 'refresh'
+        'refresh': 'refresh',
+        'layout': 'layout'
       })
     },
 

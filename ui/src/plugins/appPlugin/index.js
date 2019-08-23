@@ -14,7 +14,6 @@ const AppPlugin = {
 
     Vue.mixin({
       data: () => ({
-        loading: false
       }),
 
       beforeCreate() {

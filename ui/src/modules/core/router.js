@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import lazyLoading from '@/modules/core/lazyLoading'
-import news from '@/modules/news/router'
+import admin from '@/modules/admin/router'
+import client from '@/modules/client/router'
 
 const menus = [
-  news
+  admin,
+  client
 ]
 
 Vue.use(Router)
